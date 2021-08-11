@@ -1,16 +1,19 @@
-# Nerfies
+# VGPNN
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [VGPNN website](https://nivha.github.io/vgpnn/).
 
-If you find Nerfies useful for your work please cite:
+If you find VGPNN useful for your work please cite:
 ```
-@article{park2020nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Deformable Neural Radiance Fields},
-  journal   = {arXiv preprint arXiv:2011.12948},
-  year      = {2020},
+@article{haim2021vgpnn
+  author    = {Haim, Niv and Feinstein, Ben and Granot, Niv and Shocher, Assaf and Bagon, Shai and Dekel, Tali and Irani, Michal},
+  title     = {Diverse Generation from a Single Video Made Possible},
+  journal   = {arXiv preprint arXiv:????????soon},
+  year      = {2021},
 }
 ```
+
+# Website Credit
+This template was forked from https://github.com/nerfies/nerfies.github.io
 
 # Website License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
