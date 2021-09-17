@@ -13,10 +13,6 @@ body {
     margin-bottom: 5px;
 }
 
-.dnerf {
-  font-variant: small-caps;
-}
-
 
 .teaser .hero-body {
   padding-top: 0;
@@ -115,7 +111,6 @@ body {
 }
 
 .results-carousel .item {
-  margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -123,35 +118,56 @@ body {
   font-size: 0;
 }
 
-.results-carousel video {
-  margin: 0;
+
+.tempret-carousel {
+  overflow: hidden;
 }
 
-
-.interpolation-panel {
-  background: #f5f5f5;
+.tempret-carousel .item {
+	margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
   border-radius: 10px;
+  padding: 0;
+  font-size: 0;
 }
 
-.interpolation-panel .interpolation-image {
-  width: 100%;
-  border-radius: 5px;
+
+.vid_generation {
+	image-rendering: pixelated;
+	border: 6px solid transparent;
+}
+.vid_generation_gt {
+	image-rendering: pixelated;
+	border: 6px solid #78A2CC;
 }
 
-.interpolation-video-column {
+.table {
+	table-cell-border: none
+	table-cell-border-width: 0 0 0
+	table-cell-padding: 0 0
 }
 
-.interpolation-panel .slider {
-  margin: 0 !important;
+/* color boxes for legend */
+.color-box {
+  position: relative;
+  margin-left: 1.17em;
 }
-
-.interpolation-panel .slider {
-  margin: 0 !important;
+.color-box:before{
+  position: absolute;
+  left: -1.17em;
+  content: "";
+  height:1.17em;
+  width:1.17em;
+  margin-bottom:15px;
+  border:1px solid black;
 }
-
-#interpolation-image-wrapper {
-  width: 100%;
+.color-box.shortened:before{
+  background-color:#CC918D;
 }
-#interpolation-image-wrapper img {
-  border-radius: 5px;
+.color-box.extended:before{
+  background-color:#C1CC64;
+}
+.color-box.original:before{
+  background-color:#78A2CC;
 }

@@ -2,38 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="keywords" content="VGPNN, GPNN">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>VGPNN: Diverse Generation from a Single Video Made Possible<</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id="></script> -->
+  <!-- <script> -->
+    <!-- window.dataLayer = window.dataLayer || []; -->
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    <!-- function gtag() { -->
+      <!-- dataLayer.push(arguments); -->
+    <!-- } -->
 
-    gtag('js', new Date());
+    <!-- gtag('js', new Date()); -->
 
-    gtag('config', 'G-PYVRSFMDRL');
+    <!-- gtag('config', 'G-PYVRSFMDRL'); -->
+  <!-- </script> -->
 
-
-
-  </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,85 +37,50 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
+<!-- Top. -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">VGPNN: Diverse Generation from a Single Video Made Possible</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://nivha.github.io/">Niv Haim*</a>,
+			</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://www.semanticscholar.org/author/Ben-Feinstein/4478112">Ben Feinsten*</a>,
+			</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://scholar.google.com/citations?user=MaDeUsoAAAAJ">Niv Granot</a>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="http://www.wisdom.weizmann.ac.il/~/assafsho/">Assaf Shocher</a>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://www.weizmann.ac.il/math/bagon/home">Shai Bagon</a>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://www.weizmann.ac.il/math/dekel/">Tali Dekel</a>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://www.weizmann.ac.il/math/irani/">Michal Irani</a>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block">Weizmann Institute of Science, Rehovot, Israel</span>
+          </div>
+					<div class="is-size-6 publication-authors">
+            <span class="author-block">* Equal contribution</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -131,7 +89,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -139,26 +97,26 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (soon)</span>
                   </a>
               </span>
+							<span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark" disabled>
+                  <span class="icon">
+                      <i class="fas fa-archive"></i>
+                  </span>
+                  <span>Supplementary (soon)</span>
+                  </a>
+              </span>
+
             </div>
 
           </div>
@@ -168,266 +126,637 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop height="100%">
-        <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
 
 
+<!-- Generation Carousel. -->
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
+	
+    <div class="container has-text-centered">
+				<h2 class="title is-3">Generated Video Samples from a Single Video</h2>
+				<div class="content has-text-centered">
+					Original video <span class="color-box original">&nbsp;</span> (top-left), all others are generated
+				</div>
+
+				<div id="results-carousel" class="carousel results-carousel">
+					
+			
+					<div class="item item-dutch2">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="dutch2_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch2_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch2_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch2_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch2_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch2_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="dutch2_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch2_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch2_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch2_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch2_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch2_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-ballet">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="ballet_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/ballet_100_2_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="ballet_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/ballet_100_2_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="ballet_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/ballet_100_2_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="ballet_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/ballet_100_2_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="ballet_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/ballet_100_2_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="ballet_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/ballet_100_2_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-junction">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="junction_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/junction_110_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="junction_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/junction_110_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="junction_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/junction_110_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="junction_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/junction_110_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="junction_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/junction_110_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="junction_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/junction_110_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-airbaloons">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="airbaloons_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/air_baloons_hpvaegan_12345678912_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="airbaloons_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/air_baloons_hpvaegan_12345678912_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="airbaloons_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/air_baloons_hpvaegan_12345678912_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="airbaloons_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/air_baloons_hpvaegan_12345678912_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="airbaloons_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/air_baloons_hpvaegan_12345678912_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="airbaloons_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/air_baloons_hpvaegan_12345678912_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-pool">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="pool_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/pool_73_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="pool_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/pool_73_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="pool_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/pool_73_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="pool_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/pool_73_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="pool_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/pool_73_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="pool_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/pool_73_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-birds">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="birds_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/birds32_80_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="birds_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/birds32_80_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="birds_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/birds32_80_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="birds_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/birds32_80_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="birds_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/birds32_80_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="birds_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/birds32_80_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-dutch3">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="dutch3_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch3_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch3_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch3_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch3_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch3_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="dutch3_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch3_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch3_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch3_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="dutch3_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/dutch3_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-boatrace">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="boatrace_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/boat_race_long_tmPqO_TGa-U_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="boatrace_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/boat_race_long_tmPqO_TGa-U_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="boatrace_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/boat_race_long_tmPqO_TGa-U_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="boatrace_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/boat_race_long_tmPqO_TGa-U_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="boatrace_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/boat_race_long_tmPqO_TGa-U_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="boatrace_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/boat_race_long_tmPqO_TGa-U_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>
+					
+					<div class="item item-base">
+								<table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+									<tr>
+										<td>
+											<video class="vid_generation_gt" poster="" id="base_gt" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/base_nRxSUkZYeOE_gt.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="base_0" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/base_nRxSUkZYeOE_out0.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="base_1" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/base_nRxSUkZYeOE_out1.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<video class="vid_generation" poster="" id="base_2" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/base_nRxSUkZYeOE_out2.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="base_3" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/base_nRxSUkZYeOE_out3.mp4" type="video/mp4">
+											</video>
+										</td>
+										<td>
+											<video class="vid_generation" poster="" id="base_4" autoplay controls muted loop height="100%">
+												<source src="./vids/generation/base_nRxSUkZYeOE_out4.mp4" type="video/mp4">
+											</video>
+										</td>
+									</tr>
+								</table>
+					</div>  
+
+				</div>
+				
     </div>
   </div>
 </section>
 
 
+
+<!-- Abstract. -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p>
+					<p>
+						Most advanced video generation and manipulation methods train on a large collection of videos. As such, they are restricted to the types of video dynamics they train on. 
+						To overcome this limitation, GANs trained on a single video were recently proposed. While these provide more flexibility to a wide variety of video dynamics, 
+						they require days to train on a single tiny input video, rendering them impractical. 
+					</p>	
+					<p>
+						In this paper we present a fast and practical method for video generation and manipulation from a single natural video, which generates diverse high-quality video outputs within seconds (for benchmark videos).
+						Our method can be further applied to full-HD video clips within minutes. 
+						Our approach is inspired by a recent advanced patch-nearest-neighbor based approach [Granot et al., 2021], which was shown to significantly outperform single-image GANs, both in run-time and in visual quality. 
+					</p>
+					<p>
+						Here we generalize this approach from images to videos, by casting classical space-time patch-based methods as a new generative video model. 
+						We adapt the generative image patch nearest neighbor approach to efficiently cope with the huge number of space-time patches in a single video. 
+						Our method generates more realistic and higher quality results than single-video GANs (confirmed by quantitative and qualitative evaluations). 
+						Moreover, it is disproportionally faster (runtime reduced from several days to seconds). 
+						Other than diverse video generation, we demonstrate several other challenging video applications (some of them new), 
+						including: spatio-temporal video retargeting (e.g., video extension & video summarization), video structural analogies, sketch-to-video, conditional video-inpainting, and more.
+					</p>
+		
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
-
+		
+		
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls height="100%">
-              <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
+    <!-- Applications. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <!-- <h2 class="title is-3">More application</h2> -->
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
+
+        <!-- Video Analogies. -->
+        <h2 class="title is-3">Video Structural Analogies</h2>
+        				
+				<div class="columns is-justified">
+					<div class="column is-8">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            We can use our method to perform video structural analogies (or "video style transfer"), by transfering the motion from a content video into the patch-distribution of the style video.
           </p>
+					</div>
+				</div>
+
+				<div class="content is-centered" style="text-align: center">
+					<video class="vid_analogies" poster="" id="analogies_exp" autoplay controls muted loop height="100%">
+						<source src="./vids/analogies/analogies_exp.mp4" type="video/mp4">
+					</video>
+				</div>
+
+
+				<div class="columns is-justified">
+					<div class="column is-8">
+          <p>
+            And here are the results of our video structural analogies using the same style video as above with different content videos (smooth transitions of mnist digits from one to the next):
+          </p>
+					</div>
+				</div>
+
+			
+				<div class="content is-centered is-borderless" style="text-align: center">
+					<table class="analogies-table" style="width:100%;" >
+						<tr>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_0_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/0_r.mp4" type="video/mp4">
+								</video>
+							</td>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_1_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/1_r.mp4" type="video/mp4">
+								</video>
+							</td>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_2_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/2_r.mp4" type="video/mp4">
+								</video>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_3_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/3_r.mp4" type="video/mp4">
+								</video>
+							</td>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_4_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/4_r.mp4" type="video/mp4">
+								</video>
+							</td>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_5_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/5_r.mp4" type="video/mp4">
+								</video>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_6_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/6_r.mp4" type="video/mp4">
+								</video>
+							</td>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_7_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/7_r.mp4" type="video/mp4">
+								</video>
+							</td>
+							<td>
+								<video class="vid_analogies" poster="" id="analogies_8_r" autoplay controls muted loop height="100%">
+									<source src="./vids/analogies/8_r.mp4" type="video/mp4">
+								</video>
+							</td>
+						</tr>
+
+					</table>
+
+				</div>
+				<!--/ Video Analogies. -->
+				
+				<br/>
+
+        <!-- Spatial Retargeting. -->
+        <h2 class="title is-3">Retargeting over Spatial Dimension</h2>
+        <div class="columns is-vcentered">
+          <div class="column is-7">
+							<video poster="" id="retargeting_baloons" autoplay controls muted loop height="100%">
+								<source src="./vids/retargeting/baloons_cat.mp4" type="video/mp4">
+							</video>
+          </div>
+          <div class="column is-5">
+							<video poster="" id="retargeting_choir" autoplay controls muted loop height="100%">
+								<source src="./vids/retargeting/choir_cat.mp4" type="video/mp4">
+							</video>
+          </div>
         </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="https://homes.cs.washington.edu/~kpar/nerfies/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="https://homes.cs.washington.edu/~kpar/nerfies/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
+				<!--/ Spatial Retargeting. -->
+
         <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
+        <h2 class="title is-3">Retargeting over Temporal Dimension</h2>
+								
+				<div class="columns is-justified">
+					<div class="column is-8">
           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            Legend: <span class="color-box original">&nbsp;</span> Original video (top); <span class="color-box extended">&nbsp;</span> Extended or <span class="color-box shortened">&nbsp;</span> Summarized	(bottom)
           </p>
+					</div>
+				</div>
+				
+				<!-- Temporal Retargeting. -->
+				<div class="container has-text-centered">
+				
+					<div id="tempret-carousel" class="carousel tempret-carousel">
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/ballet_long.mp4" type="video/mp4">
+									</video>
+						</div>
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/dog_long.mp4" type="video/mp4">
+									</video>
+						</div>
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/goldfish2_long.mp4" type="video/mp4">
+									</video>
+						</div>
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/ballet_short.mp4" type="video/mp4">
+									</video>
+						</div>
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/dog_short.mp4" type="video/mp4">
+									</video>
+						</div>
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/piano_short.mp4" type="video/mp4">
+									</video>
+						</div>
+						<div class="item">
+									<video autoplay controls muted loop height="100%">
+										<source src="./vids/retargeting/temporal/weird_man_short.mp4" type="video/mp4">
+									</video>
+						</div>
+
+					</div>
+					
+				</div>
+				<!--/ Temporal Retargeting. -->
+	
+				<br/>
+	
+	        <!-- Conditional Inpainting. -->
+        <h2 class="title is-3">Conditional Inpainting</h2>
+				
+				<div class="columns is-justified">
+					<div class="column is-8">
+          <p>
+            We can add/remove parts of the video by marking the relevant region. The color will be used to guide our method to replace it with an object from the video with similar color.
+          </p>
+					</div>
+				</div>
+				
+        <div class="columns is-vcentered">
+					<!-- <div class="column is-1"> -->
+						<!-- <div class='rows'> -->
+								<!-- <div class='row is-full'> Original </div> -->
+								<!-- <div class='row is-full'> Input </div> -->
+								<!-- <div class='row is-full'> Output </div> -->
+						<!-- </div> -->
+          <!-- </div> -->
+					<div class="column">
+							<video autoplay controls muted loop height="100%">
+								<source src="./vids/cinpainting/cinp_soccer.mp4" type="video/mp4">
+							</video>
+          </div>
+					<div class="column">
+							<video autoplay controls muted loop height="100%">
+								<source src="./vids/cinpainting/cinp_soccer2.mp4" type="video/mp4">
+							</video>
+          </div>
+					<div class="column">
+							<video autoplay controls muted loop height="100%">
+								<source src="./vids/cinpainting/cinp_soccer3.mp4" type="video/mp4">
+							</video>
+          </div>
+          <div class="column">
+							<video autoplay controls muted loop height="100%">
+								<source src="./vids/cinpainting/cinp_birds.mp4" type="video/mp4">
+							</video>
+          </div>
+          <div class="column">
+							<video autoplay controls muted loop height="100%">
+								<source src="./vids/cinpainting/cinp_basketball.mp4" type="video/mp4">
+							</video>
+          </div>
         </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 width="75%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
+				<!--/ Conditional Inpainting. -->
 
-      </div>
-    </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
+	
+			</div>
+		</div>
+		
 
   </div>
 </section>
@@ -436,11 +765,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2020nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Deformable Neural Radiance Fields},
-  journal   = {arXiv preprint arXiv:2011.12948},
-  year      = {2020},
+    <pre><code>@article{haim2021vgpnn
+  author    = {Haim, Niv and Feinstein, Ben and Granot, Niv and Shocher, Assaf and Bagon, Shai and Dekel, Tali and Irani, Michal},
+  title     = {Diverse Generation from a Single Video Made Possible},
+  journal   = {arXiv preprint arXiv:},
+  year      = {2021},
 }</code></pre>
   </div>
 </section>
@@ -450,27 +779,20 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+         href="">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/nivha" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
-      <div class="column is-8">
+      <div class="column is-8 has-text-centered">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website is forked from this
+						<a href="https://nerfies.github.io/">website</a> and 						
+						<a href="https://github.com/nerfies/nerfies.github.io">source code</a>
           </p>
         </div>
       </div>
