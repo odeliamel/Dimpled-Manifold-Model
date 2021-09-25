@@ -4,7 +4,7 @@ This is the repository that contains source code for the [VGPNN website](https:/
 
 If you find VGPNN useful for your work please cite:
 ```
-@article{haim2021vgpnn
+@article{haim2021vgpnn,
   author    = {Haim, Niv and Feinstein, Ben and Granot, Niv and Shocher, Assaf and Bagon, Shai and Dekel, Tali and Irani, Michal},
   title     = {Diverse Generation from a Single Video Made Possible},
   journal   = {arXiv preprint arXiv:2109.08591},
