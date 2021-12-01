@@ -119,6 +119,34 @@ body {
 }
 
 
+.analogies-carousel {
+  overflow: hidden;
+}
+
+.analogies-carousel .item {
+	margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+
+.spatret-carousel {
+  overflow: hidden;
+}
+
+.spatret-carousel .item {
+	margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+
 .tempret-carousel {
   overflow: hidden;
 }
@@ -133,6 +161,21 @@ body {
 }
 
 
+.cinp-carousel {
+  overflow: hidden;
+}
+
+.cinp-carousel .item {
+	margin: 5px;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
+}
+
+
+
 .vid_generation {
 	image-rendering: pixelated;
 	border: 6px solid transparent;
@@ -141,6 +184,36 @@ body {
 	image-rendering: pixelated;
 	border: 6px solid #78A2CC;
 }
+
+.vid_analogies {
+	image-rendering: pixelated;
+	border: 6px solid transparent;
+}
+.vid_analogies_gt {
+	image-rendering: pixelated;
+	border: 6px solid transparent;
+}
+
+.vid_analogies_result {
+	image-rendering: pixelated;
+	border: 6px solid transparent;
+	height: 200px;
+}
+.vid_analogies_content {
+	image-rendering: pixelated;
+	border: 6px solid transparent;
+	height: 200px;
+}
+.vid_analogies_style {
+	image-rendering: pixelated;
+	border: 6px solid transparent;
+	height: 200px;
+}
+
+
+
+
+
 
 .table {
 	table-cell-border: none
@@ -170,4 +243,7 @@ body {
 }
 .color-box.original:before{
   background-color:#78A2CC;
+}
+.color-box.style:before{
+  background-color:#EED7CE;
 }

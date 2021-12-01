@@ -10,6 +10,7 @@ $(document).ready(function() {
 
     });
 
+		// <--results-carousel-->
     var options = {
 			slidesToScroll: 1,
 			slidesToShow: 1,
@@ -29,8 +30,55 @@ $(document).ready(function() {
     		console.log(state);
     	});
     }
+		// </--results-carousel-->
 		
-		// <--NIV-->
+		// <--analogies-carousel-->
+		var options = {
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			loop: true,
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
+	  // Initialize all div with carousel class
+    var carousels = bulmaCarousel.attach('.analogies-carousel', options);
+
+    // Loop on each carousel initialized
+    for(var i = 0; i < carousels.length; i++) {
+    	// Add listener to  event
+    	carousels[i].on('before:show', state => {
+    		console.log(state);
+    	});
+    }
+		// </--analogies-carousel-->
+
+		
+		// <--spatret-carousel-->
+		var options = {
+			slidesToScroll: 1,
+			slidesToShow: 1,
+			loop: true,
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
+	  // Initialize all div with carousel class
+    var carousels = bulmaCarousel.attach('.spatret-carousel', options);
+
+    // Loop on each carousel initialized
+    for(var i = 0; i < carousels.length; i++) {
+    	// Add listener to  event
+    	carousels[i].on('before:show', state => {
+    		console.log(state);
+    	});
+    }
+		// </--spatret-carousel-->
+
+		
+		// <--tempret-carousel-->
 		var options = {
 			slidesToScroll: 1,
 			slidesToShow: 3,
@@ -50,7 +98,31 @@ $(document).ready(function() {
     		console.log(state);
     	});
     }
-		// </--NIV-->
+		// </--tempret-carousel-->
+
+
+		// <--cinp-carousel-->
+		var options = {
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			loop: true,
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
+	  // Initialize all div with carousel class
+    var carousels = bulmaCarousel.attach('.cinp-carousel', options);
+
+    // Loop on each carousel initialized
+    for(var i = 0; i < carousels.length; i++) {
+    	// Add listener to  event
+    	carousels[i].on('before:show', state => {
+    		console.log(state);
+    	});
+    }
+		// </--cinp-carousel-->
+
 
 
     // Access to bulmaCarousel instance of an element
@@ -61,5 +133,12 @@ $(document).ready(function() {
     		console.log(state);
     	});
     }
+		
+		
+		// fix analogies sheep width
+		// w_height = $(".analogies_vid, .analogies_w")[0].getBoundingClientRect().height;
+		// $(".analogies_vid, .analogies_h").css("width", w_height);
+		// $(".analogies_vid, .analogies_w").css("height", w_height);
+
 
 })
