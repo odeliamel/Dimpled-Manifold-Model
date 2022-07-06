@@ -119,6 +119,64 @@
 
 
 
+
+<!-- Generation Carousel. -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  
+    <div class="container has-text-centered">
+        <h2 class="title is-3">Decision baoundary evolusion over epochs in synthetic low-dimensional settings</h2>
+        <!-- <div class="content has-text-centered is-size-5">
+          Original video <span class="color-box original">&nbsp;</span> (top-left), all others are generated
+        </div> -->
+
+        <div id="results-carousel" class="carousel results-carousel">
+          
+      
+          <div class="item item-dutch2">
+                <table class="carousel-table" style="width:100%; font-weight: bold; font-size: 1em; border-spacing:1%;">
+                  <tr>
+                    <td>
+                      <img class="2dboundary"  id="2db" autoplay controls muted loop height=100>
+                        <source src="./GIFs/2Dcheckpointsanimation.gif">
+                      </img>
+                    </td>
+                    <td>
+                      <img class="23boundary"  id="2db" autoplay controls muted loop height=100>
+                        <source src="./GIFs/3Dcheckpointsanimation.gif">
+                      </img>
+                    </td>
+
+                  </tr>
+                 <!--  <tr>
+                    <td>
+                      <video class="vid_generation"  id="dutch2_2" autoplay controls muted loop height=100>
+                        <source src="./vids/generation/dutch2_out2.mp4" type="video/mp4">
+                      </video>
+                    </td>
+                    <td>
+                      <video class="vid_generation"  id="dutch2_3" autoplay controls muted loop height=100>
+                        <source src="./vids/generation/dutch2_out3.mp4" type="video/mp4">
+                      </video>
+                    </td>
+                    <td>
+                      <video class="vid_generation"  id="dutch2_4" autoplay controls muted loop height=100>
+                        <source src="./vids/generation/dutch2_out4.mp4" type="video/mp4">
+                      </video>
+                    </td>
+                  </tr> -->
+                </table>
+          </div>
+
+
+        </div>
+        
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Abstract. -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -127,7 +185,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          The extreme fragility of deep neural networks, when presented with tiny perturbations in their inputs, was independently discovered by several research groups in 2013. However, despite enormous effort, these adversarial examples remained a counterintuitive phenomenon with no simple testable explanation. In this paper, we introduce a new conceptual framework for how the decision boundary between classes evolves during training, which we call the {\em Dimpled Manifold Model}. In particular, we demonstrate that training is divided into two distinct phases. The first phase is a (typically fast) clinging process in which the initially randomly oriented decision boundary gets very close to the low dimensional image manifold, which contains all the training examples. Next, there is a (typically slow) dimpling phase which creates shallow bulges in the decision boundary that move it to the correct side of the training examples. This framework provides a simple explanation for why adversarial examples exist, why their perturbations have such tiny norms, and why they look like random noise rather than like the target class. This explanation is also used to show that a network that was adversarially trained with incorrectly labeled images might still correctly classify most test images, and to show that the main effect of adversarial training is just to deepen the generated dimples in the decision boundary. Finally, we discuss and demonstrate the very different properties of on-manifold and off-manifold adversarial perturbations. We describe the results of numerous experiments which strongly support this new model, using both low dimensional synthetic datasets and high dimensional natural datasets.
+          The extreme fragility of deep neural networks, when presented with tiny perturbations in their inputs, was independently discovered by several research groups in 2013. However, despite enormous effort, these adversarial examples remained a counterintuitive phenomenon with no simple testable explanation. In this paper, we introduce a new conceptual framework for how the decision boundary between classes evolves during training, which we call the <b> Dimpled Manifold Model </b>. In particular, we demonstrate that training is divided into two distinct phases. The first phase is a (typically fast) clinging process in which the initially randomly oriented decision boundary gets very close to the low dimensional image manifold, which contains all the training examples. Next, there is a (typically slow) dimpling phase which creates shallow bulges in the decision boundary that move it to the correct side of the training examples. This framework provides a simple explanation for why adversarial examples exist, why their perturbations have such tiny norms, and why they look like random noise rather than like the target class. This explanation is also used to show that a network that was adversarially trained with incorrectly labeled images might still correctly classify most test images, and to show that the main effect of adversarial training is just to deepen the generated dimples in the decision boundary. Finally, we discuss and demonstrate the very different properties of on-manifold and off-manifold adversarial perturbations. We describe the results of numerous experiments which strongly support this new model, using both low dimensional synthetic datasets and high dimensional natural datasets.
           </p>
     
         </div>
